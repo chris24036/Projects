@@ -8,3 +8,20 @@ lastName               VARCHAR(60)    NOT NULL,
 dateCreated            DATETIME       NOT NULL,
 PRIMARY KEY (TechCityManagerID)
 );
+
+INSERT INTO TechCityManagers
+(`emailAddress`,password,pronouns,`firstName`,`lastName`,`dateCreated`)
+VALUES('xiara.rodriguez@techcity.net', SHA2('wh4t3ver',256),'She/her', 'Xiara', 'Rodriguez', NOW())
+
+INSERT INTO TechCityManagers
+(`emailAddress`,password,pronouns,`firstName`,`lastName`,`dateCreated`)
+VALUES('aaron.judge@techcity.net', SHA2('pa55word', 256), 'He/him','Aaron', 'Judge', NOW());
+
+INSERT INTO TechCityManagers
+(`emailAddress`,password,pronouns,`firstName`,`lastName`,`dateCreated`)
+VALUES('lamar.jackson@techcity.net', SHA2('notpa55word', 256), 'He/him', 'Lamar', 'Jackson', NOW());
+
+SELECT * FROM TechCityManagers
+
+
+
