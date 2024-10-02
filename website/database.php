@@ -15,5 +15,5 @@ function getDB() {
        echo $e->getMessage();
    }
 }
-getDB();
+//getDB();
 ?>

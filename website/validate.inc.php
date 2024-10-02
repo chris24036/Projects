@@ -13,7 +13,11 @@ $fetched = $stmt->fetch();
 $name = "$firstName $lastName";
 if ($fetched && isset($name)) {
    echo "<h2>Welcome to TechCity Inventory Helper, $name</h2>\n";
-   $_SESSION['login'] = $name;
+   $_SESSION['login'] = true;
+   $_SESSION['name'] = $name;
+   
+   
+
    header("Location: index.php");
 } else {
    echo "<h2>Sorry, you cannot access the TechCity Inventory Helper because your login is incorrect.</h2>\n";

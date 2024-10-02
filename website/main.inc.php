@@ -2,9 +2,9 @@
 if (!isset($_SESSION['login'])) {
 ?>
     <h2>Please Login to TechCity Inventory Website</h2><br>
-    <form> name="login" action="index.php" method="post">
+    <form name="login" action="index.php" method="post">
         <label>Email:</label>
-        <input type="text" name="password" size="20">
+        <input type="text" name="emailAddress" size="20">
         <br>
         <br>
         <label>Password:</label>
@@ -16,7 +16,9 @@ if (!isset($_SESSION['login'])) {
 </form>
 <?php
 }else{
-    "<h2>Welcome to TechCity Inventory helper, {$_SESSION['login']}</h2>";
+    //need to figure out how to display name after succesfully logging in.
+
+    "<h2>Hi $name Welcome to TechCity Inventory helper, {$_SESSION['login']}</h2>";
 ?>
      <br><br>
    <p>This program tracks category and item inventory</p>
