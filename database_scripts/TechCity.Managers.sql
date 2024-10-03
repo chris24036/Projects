@@ -1,3 +1,5 @@
+--Christopher M. Rodriguez, IT202-001, Phase1 Assignment, cmr82@njit.edu
+
 CREATE TABLE TechCityManagers (
 TechCityManagerID     INT(11)        NOT NULL   AUTO_INCREMENT,
 emailAddress           VARCHAR(255)   NOT NULL   UNIQUE,

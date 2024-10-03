@@ -1,4 +1,5 @@
 <?php
+//--Christopher M. Rodriguez, IT202-001, Phase1 Assignment, cmr82@njit.edu
 function getDB() {
    $host = 'sql1.njit.edu';
    $port = 3306;
