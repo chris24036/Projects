@@ -53,3 +53,4 @@ VALUES
 500, 599.99, 699.99, NOW(), "Carbon Gray"); 
 
 SELECT * FROM `TechGadgetProducts`;
+
