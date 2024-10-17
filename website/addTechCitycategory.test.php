@@ -7,7 +7,8 @@ if ((trim($TechCategoryID) == '') or (!is_numeric($TechCategoryID))) {
 } else {
   $TechCategoryCode = $_GET['TechCategoryCode'];
   $TechCategoryName = $_GET['TechCategoryName'];
-  $TechCategory = new Category($TechCategoryID, $TechCategoryCode, $TechCategoryName);
+  $ShelfNumber = $_GET['ShelfNumber'];
+  $TechCategory = new Category($TechCategoryID, $TechCategoryCode, $TechCategoryName, $ShelfNumber);
   $result = $TechCategory->saveCategory();
   if ($result) {
       echo "<h2>New Category #$TechCategoryID successfully added</h2>\n";

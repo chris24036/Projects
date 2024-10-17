@@ -4,10 +4,12 @@ class Category{
     public $TechCategoryID;
     public $TechCategoryCode;
     public $TechCategoryName;
-    function __construct($TechCategoryID,$TechCategoryCode,$TechCategoryName){
+    public $ShelfNumber;
+    function __construct($TechCategoryID,$TechCategoryCode,$TechCategoryName,$ShelfNumber){
         $this ->TechCategoryID = $TechCategoryID;
         $this ->TechCategoryCode = $TechCategoryCode;
         $this ->TechCategoryName = $TechCategoryName;
+        $this ->ShelfNumber =$ShelfNumber;
     }
     function __toString(){
    
@@ -17,13 +19,15 @@ class Category{
     }
     function saveCategory(){
         $db = getDB();
-        $query = "INSERT INTO TechGadgetCategories VALUES (?,?,?)";
-        $stmt = $db -> prepare($query);
+        $query = "INSERT INTO TechGadgetCategories(TechCategoryID, TechCategoryCode, TechCategoryName, ShelfNumber, DateCreated) VALUES (?,?,?,?,NOW())";
+        $stmt = $db->prepare($query);
         $stmt->bind_param(
-            "iss",
+            "issi",
             $this->TechCategoryID,
             $this->TechCategoryCode,
-            $this->TechCategoryName
+            $this->TechCategoryName,
+            $this->ShelfNumber
+            
         );
         $result = $stmt->execute();
         $db->close();
@@ -37,9 +41,10 @@ class Category{
             $categories = array();
             while($row = $result->fetch_array(MYSQLI_ASSOC)){
                 $category = new Category(
-                    $row['$TechCategoryID'],
-                    $row['$TechCategoryCode'],
-                    $row['$TechCategoryName'] 
+                    $row['TechCategoryID'],
+                    $row['TechCategoryCode'],
+                    $row['TechCategoryName'],
+                    $row['ShelfNumber']
 
                 );
                 array_push($categories, $category);
@@ -55,13 +60,14 @@ class Category{
     }
     function updateCategory(){
         $db = getDB();
-        $query = $query = "UPDATE TechGadgetCategories SET TechCategoryID = ?, TechCategoryCode =?, TechCategoryName = ? WHERE TechCategoryID = $this->TechCategoryID";
+        $query = $query = "UPDATE TechGadgetCategories SET TechCategoryID = ?, TechCategoryCode =?, TechCategoryName = ?, ShelfNumber =? WHERE TechCategoryID = $this->TechCategoryID";
         $stmt = $db ->prepare($query);
         $stmt->bind_param(
-            "iss",
+            "issi",
             $this->TechCategoryID,
             $this->TechCategoryCode,
-            $this->TechCategoryName
+            $this->TechCategoryName,
+            $this->ShelfNumber
         );
         $result = $stmt->execute();
         $db->close();
@@ -76,7 +82,8 @@ class Category{
             $category = new Category(
                 $row['TechCategoryID'],
                 $row['TechCategoryCode'],
-                $row['TechCategoryName']
+                $row['TechCategoryName'],
+                $row['ShelfNumber']
             );
             $db->close();
             return $category;

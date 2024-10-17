@@ -1,2 +1,14 @@
 //Christopher M. Rodriguez, 10/18/2024, IT202-001, Phase 2, cmr82@njit.edu
 Display of links link for CRUD testing:
+
+Create Category
+http://localhost:3000/addTechCitycategory.test.php?TechCategoryID=123&TechCategoryCode=VR&TechCategoryName=Oculus&ShelfNumber=90
+Verify
+http://localhost:3000/listTechCityCategories.test.php
+
+Update Category
+http://localhost:3000/changeTechCitycategory.test.php?TechCategoryID=400&TechCategoryCode=BLTH&TechCategoryName=Bluetooth%20Devices&ShelfNumber=004
+Verify
+http://localhost:3000/listTechCityCategories.test.php
+
+

@@ -1,7 +1,7 @@
 //Christopher M. Rodriguez, 10/18/2024, IT202-001, Phase 2, cmr82@njit.edu
 <?php
-include("category.php");
-$categoryID = $_GET['categoryID'];
+include("techcity.category.php");
+$TechCategoryID = $_GET['TechCategoryID'];
 $category = Category::findCategory($TechCategoryID);
 $category->TechCategoryID = $_GET['TechCategoryID'];
 $category->TechCategoryCode = $_GET['TechCategoryCode'];
