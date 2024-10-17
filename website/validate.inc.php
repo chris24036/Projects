@@ -1,3 +1,4 @@
+//Christopher M. Rodriguez, 10/18/2024, IT202-001, Phase 2, cmr82@njit.edu
 <?php
 //--Christopher M. Rodriguez, IT202-001, Phase1 Assignment, cmr82@njit.edu
 require_once('database.php');
