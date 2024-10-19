@@ -26,6 +26,11 @@ VALUES
 INSERT INTO TechGadgetCategories
 (`TechCategoryID`,`TechCategoryCode`,`TechCategoryName`,`ShelfNumber`,`DateCreated`)
 VALUES
+(221,"SMRT", "Smart Devices",002, NOW());
+
+INSERT INTO TechGadgetCategories
+(`TechCategoryID`,`TechCategoryCode`,`TechCategoryName`,`ShelfNumber`,`DateCreated`)
+VALUES
 (300,"NOWIRE", "Wireless Devices",003, NOW());
 
 INSERT INTO TechGadgetCategories

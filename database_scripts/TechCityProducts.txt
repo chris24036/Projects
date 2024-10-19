@@ -1,0 +1,15 @@
+Create Product
+http://localhost:3000/addTechCityproduct.test.php?TechProductID=1467&TechProductCode=CMR&TechName=Camera&color=Silver&TechDescription=fast&TechCategoryID=400&TechWholesalePrice=399.99&TechListPrice=499.99&DateCreated=2024-10-18%2012:00:00
+Verify product
+http://localhost:3000/listTechCityproducts.test.php?
+
+Update Product
+http://localhost:3000/changeTechCityproducts.test.php?TechProductID=3500&TechProductCode=CARA&TechName=Updated%20Camera&color=Silver&TechDescription=fast&TechCategoryID=400&TechWholesalePrice=350.00&TechListPrice=450.00&DateCreated=2024-10-18%2012:00:00
+Verify
+http://localhost:3000/listTechCityproducts.test.php?
+
+Delete Product
+http://localhost:3000/removeTechCityproduct.test.php?TechProductID=3500
+Verify
+http://localhost:3000/listTechCityproducts.test.php?
+

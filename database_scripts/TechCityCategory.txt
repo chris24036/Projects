@@ -11,4 +11,11 @@ http://localhost:3000/changeTechCitycategory.test.php?TechCategoryID=400&TechCat
 Verify
 http://localhost:3000/listTechCityCategories.test.php
 
+Delete Category
+http://localhost:3000/removeTechCitycategory.test.php?TechCategoryID=400
+Verify
+http://localhost:3000/listTechCitycategories.test.php
+
+
+
 
