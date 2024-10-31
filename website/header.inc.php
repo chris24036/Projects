@@ -1,7 +1,7 @@
 <style>
    .header-div {
        display: flex;
-       align-items: center;
+       align-items:flex-end;
    }
    .header-div img {
        width: 35px;
@@ -11,6 +11,12 @@
    .header-div h1,
    .header-div h2 {
        margin: 0;
+   }
+   .login-container{
+    display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
    }
 </style>
 <div class="header-div">
@@ -24,7 +30,7 @@
    display: grid;
    grid-template-columns: 100px 1fr;
    gap: 10px 5px;
-   align-items: center;
+   align-items: normal;
    max-width: 300px;
  }
  form[name="login"] label {
