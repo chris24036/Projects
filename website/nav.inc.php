@@ -18,22 +18,22 @@
            <td><strong>Categories</strong></td>
        </tr>
        <tr>
-           <td>&nbsp;&nbsp;&nbsp;<a href="index.php?content=listcategories">
+           <td>&nbsp;&nbsp;&nbsp;<a href="index.php?content=listTechCitycategories">
                    <strong>List Categories</strong></a></td>
        </tr>
        <tr>
-           <td>&nbsp;&nbsp;&nbsp;<a href="index.php?content=newcategory">
+           <td>&nbsp;&nbsp;&nbsp;<a href="index.php?content=newtechcitycategory">
                    <strong>Add New Category</strong></a></td>
        </tr>
        <tr>
            <td><strong>Items</strong></td>
        </tr>
        <tr>
-           <td>&nbsp;&nbsp;&nbsp;<a href="index.php?content=listitems">
+           <td>&nbsp;&nbsp;&nbsp;<a href="index.php?content=listtechcityproducts">
                    <strong>List Items</strong></a></td>
        </tr>
        <tr>
-           <td>&nbsp;&nbsp;&nbsp;<a href="index.php?content=newitem">
+           <td>&nbsp;&nbsp;&nbsp;<a href="index.php?content=newtechcityproduct">
                    <strong>Add New Item</strong></a></td>
        </tr>
        <tr>
@@ -52,10 +52,10 @@
            <td>
                <form action="index.php" method="post">
                    <label>Search for Item:</label><br>
-                   <input type="text" name="itemID" size="14" />
+                   <input type="text" name="TechProductID" size="14" required />
                    <input type="submit" value="find" />
-                   <input type="hidden" name="content" value="updateitem">
-                   </form>
+                   <input type="hidden" name="content" value="updatetechproduct">
+                </form>
            </td>
        </tr>
        <tr>
@@ -64,7 +64,7 @@
                    <label>Search for Category:</label><br>
                    <input type="text" name="categoryID" size="14" />
                    <input type="submit" value="find" />
-                   <input type="hidden" name="content" value="displaycategory">
+                   <input type="hidden" name="content" value="displaytechcitycategory">
                </form>
            </td>
        </tr>

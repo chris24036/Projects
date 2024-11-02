@@ -1,12 +1,7 @@
-
-//Christopher M. Rodriguez, 10/18/2024, IT202-001, Phase 2, cmr82@njit.edu
-
-<h2>Select Item</h2>
-<form name="items" method="post">
-   <select name="itemID" size="20">
+<h2>Items</h2>
+<ul>
 <?php
 include("techcity.product.php");
-
 
 $products = Product::getProduct(); 
 
@@ -15,12 +10,11 @@ if ($products && is_array($products)) {
     foreach ($products as $product) {
         $TechProductID = $product->TechProductID;
         $name = "$TechProductID - $product->TechProductCode, $product->TechName"; // Using double quotes for cleaner syntax
-        echo "<br>$name<br>";
+        // Output each product as a list item
+        echo "<li>$name</li>";
     }
 } else {
-    echo "No products found.";
+    echo "<li>No products found.</li>";
 }
 ?>
-    </select>
-</form>
-
+</ul>

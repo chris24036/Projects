@@ -1,6 +1,6 @@
 <?php
 require_once('database.php');
-include("techcity.category.php");
+include_once("techcity.category.php");
 class Product{
     public $TechProductID;
     public $TechProductCode;

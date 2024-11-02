@@ -1,8 +1,10 @@
 <?php
+include_once("techcity.product.php");
+//nclude_once("changetechcityproduct.inc.php");
 if (!isset($_POST['TechProductID']) or (!is_numeric($_POST['TechProductID']))) {
 ?>
    <h2>You did not select a valid product ID value</h2>
-   <a href="index.php?content=listitems">List items</a>
+   <a href="index.php?content=listtechcityproducts">List items</a>
    <?php
 } else {
    $TechProductID = $_POST['TechProductID'];
@@ -18,7 +20,7 @@ if (!isset($_POST['TechProductID']) or (!is_numeric($_POST['TechProductID']))) {
                </tr>
                <tr>
                <td>Name</td>
-                   <td><input type="text" name="TechProductName" value="<?php echo $product->TechProductID; ?>"></td>
+                   <td><input type="text" name="TechProductName" value="<?php echo $product->TechName; ?>"></td>
                </tr>
                <tr>
                    <td>Category ID</td>
@@ -32,13 +34,13 @@ if (!isset($_POST['TechProductID']) or (!is_numeric($_POST['TechProductID']))) {
            <input type="submit" name="answer" value="Update Item">
            <input type="submit" name="answer" value="Cancel">
            <input type="hidden" name="itemID" value="<?php echo $TechProductID; ?>">
-           <input type="hidden" name="content" value="changeitem">
+           <input type="hidden" name="content" value="changetechcityproduct">
        </form>
    <?php
     }else {
         ?>
             <h2>Sorry, product <?php echo $TechProductID; ?> not found</h2>
-            <a href="index.php?content=listitems">List items</a>
+            <a href="index.php?content=listtechcityproducts">List items</a>
     <?php
         }
     }

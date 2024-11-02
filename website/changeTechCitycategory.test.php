@@ -6,6 +6,7 @@ $category = Category::findCategory($TechCategoryID);
 $category->TechCategoryID = $_GET['TechCategoryID'];
 $category->TechCategoryCode = $_GET['TechCategoryCode'];
 $category->TechCategoryName = $_GET['TechCategoryName'];
+$category->ShelfNumber = $_GET['ShelfNumber'];
 $result = $category->updateCategory();
 if ($result) {
    echo "<h2>Category $TechCategoryID updated</h2>\n";

@@ -28,10 +28,12 @@
 <style>
  form[name="login"] {
    display: grid;
-   grid-template-columns: 100px 1fr;
-   gap: 10px 5px;
-   align-items: normal;
+   grid-template-columns:1fr;
+   grid-template-rows: auto;
+   gap: 10px;
+   align-items:right;
    max-width: 300px;
+   margin: 0;
  }
  form[name="login"] label {
    text-align: right;
@@ -40,9 +42,10 @@
  form[name="login"] input[type="text"],
  form[name="login"] input[type="password"] {
    width: 100%;
+   padding: 8px;
  }
  form[name="login"] input[type="submit"] {
-   grid-column: 2;
    justify-self: start;
+
  }
 </style>

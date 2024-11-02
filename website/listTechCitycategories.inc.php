@@ -1,15 +1,13 @@
-//Christopher M. Rodriguez, 10/18/2024, IT202-001, Phase 2, cmr82@njit.edu
-<h2>Select Category</h2>
-<form name="categories" method="post">
-   <select name="categoryID" size="20">
+<h2>Tech City Categories</h2>
+<ul>
 <?php
-include("techcity.category.php");
+include_once("techcity.category.php");
 $categories = Category::getCategories();
-foreach($categories as $category) {
+foreach ($categories as $category) {
    $TechCategoryID = $category->TechCategoryID;
    $name = $TechCategoryID . " - " . $category->TechCategoryCode . ", " . $category->TechCategoryName;
-   echo "$name<br>";
+   // Output category as a list item
+   echo "<li>$name</li>";
 }
 ?>
-   </select>
-</form>
+</ul>

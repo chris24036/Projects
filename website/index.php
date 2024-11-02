@@ -1,6 +1,7 @@
 <?php
 //--Christopher M. Rodriguez, IT202-001, Phase1 Assignment, cmr82@njit.edu
 session_start();
+include("techcity.category.php");
 ?>
 <!DOCTYPE html>
 <html>
