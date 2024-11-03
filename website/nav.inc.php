@@ -43,7 +43,7 @@
        </tr>
        <tr>
            <td><a href="index.php?content=logout">
-                   <strong>Logout</strong></a></td>
+                <strong>Logout</strong></a></td>
        </tr>
        <tr>
            <td>&nbsp;</td>

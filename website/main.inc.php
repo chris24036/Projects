@@ -25,7 +25,6 @@ if (!isset($_SESSION['login'])) {
    <p>This program tracks category and item inventory for TechCity</p>
    <p>TechCity is a store that sells technology gadgets.</p>
    <p>We sell items such as VR headsets, smart thermostats, and many other cool tech gadgets!</p>
-   <a href="index.php?content=logout"><strong>Logout</strong></a>
 <?php
 }
 ?>
