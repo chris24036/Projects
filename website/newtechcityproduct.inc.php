@@ -3,7 +3,7 @@
    <table cellpadding="1" border="0">
        <tr>
            <td>Product ID:</td>
-           <td><input type="text" name="TechProductID" size="4"></td>
+           <td><input type="number" name="TechProductID" size="4"></td>
        </tr>
        <tr>
            <td>Name:</td>
@@ -15,7 +15,7 @@
        </tr>
        <tr>
            <td>List Price:</td>
-           <td><input type="text" name="TechListPrice" size="10"></td>
+           <td><input type="number" min=0 max=6 step=0.1 name="TechListPrice" size="10"></td>
        </tr>
        <tr>
            <td>Color:</td>
@@ -31,7 +31,7 @@
        </tr>
        <tr>
            <td>Tech Wholesale Price:</td>
-           <td><input type="text" name="TechWholesalePrice" size="10"></td>
+           <td><input type="number" min=0 max=6 step=0.1 name="TechWholesalePrice" size="10"></td>
        </tr>
    </table><br>
    <input type="submit" value="Submit New Item">

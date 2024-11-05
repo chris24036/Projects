@@ -1,8 +1,8 @@
-//Christopher M. Rodriguez, 10/18/2024, IT202-001, Phase 2, cmr82@njit.edu
 <?php
+//Christopher M. Rodriguez, 10/18/2024, IT202-001, Phase 2, cmr82@njit.edu
 include_once("techcity.product.php");
 $TechProductID = $_GET['TechProductID'];
-if ((trim($TechProductID) == '')) {
+if ((trim($TechProductID) == '') or (!is_int($TechProductID))) {
   echo "<h2>Sorry, you must enter a valid product ID number</h2>\n";
 } else {
   $TechProductCode = $_GET['TechProductCode'];
