@@ -20,6 +20,7 @@
    }
 </style>
 <div class="header-div">
+   <img src="alttechcitylogo.png" alt="Tech City Logo">
    <div>
        <h1>Tech City</h1>
        <h2>Inventory Management</h2>

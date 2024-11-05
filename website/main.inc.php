@@ -2,7 +2,7 @@
 //--Christopher M. Rodriguez, IT202-001, Phase1 Assignment, cmr82@njit.edu
 if (!isset($_SESSION['login'])) {
 ?>
-    <h2 style="color:blue;">Welcome to TechCity Inventory Helper! Login below</h2><br>
+    <h2 style="color:gray">Welcome to TechCity Inventory Helper! Login below</h2><br>
     <form name="login" action="index.php" method="post">
         <label>Email:</label>
         <input type="text" name="emailAddress" size="25">
@@ -23,8 +23,9 @@ if (!isset($_SESSION['login'])) {
     echo "<h2>Hi $firstName $lastName($pronouns), Welcome to TechCity Inventory helper </h2>";
 ?>
    <p>This program tracks category and item inventory for TechCity</p>
-   <p>TechCity is a store that sells technology gadgets.</p>
-   <p>We sell items such as VR headsets, smart thermostats, and many other cool tech gadgets!</p>
+   <p>Managers will have the ability to adjust/create categories and items for.</p>
+   <p>Tech City. Only authorized users have access to this application.</p>
+   <p>All gadgets that are created must follow Tech City guidlines!</p>
 <?php
 }
 ?>

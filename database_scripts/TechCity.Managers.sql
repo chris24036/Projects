@@ -23,6 +23,10 @@ INSERT INTO TechCityManagers
 (`emailAddress`,password,pronouns,`firstName`,`lastName`,`dateCreated`)
 VALUES('lamar.jackson@techcity.net', SHA2('notpa55word', 256), 'He/him', 'Lamar', 'Jackson', NOW());
 
+INSERT INTO TechCityManagers
+(`emailAddress`,password,pronouns,`firstName`,`lastName`,`dateCreated`)
+VALUES('manager@techcity.net', SHA2('12345', 256), 'He/him', 'Chris', 'Rodriguez', NOW());
+
 SELECT * FROM TechCityManagers
 
 

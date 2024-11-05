@@ -9,7 +9,7 @@
        </tr>
    <?php
    } else {
-       echo "<td><h3>Welcome, {$_SESSION['login']}</h3></td>\n";
+       echo "<td><h3>Welcome, {$_SESSION['name']}</h3></td>\n";
    ?>
        <tr>
            <td><a href="index.php"><strong>Home</strong></a></td>
