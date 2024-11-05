@@ -11,7 +11,7 @@ body {
 h1 {
     font-family: Georgia, serif;
     font-size: 140%;
-    color:gray; /* Dark blue for main headings */
+    color:rgb(168, 178, 182); /* Dark blue for main headings */
     margin: 0px;
     padding: 0px;
 }
