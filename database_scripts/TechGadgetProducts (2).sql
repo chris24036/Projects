@@ -2,8 +2,8 @@
 -- version 4.2.7.1
 -- http://www.phpmyadmin.net
 --
--- Host: sql1.njit.edu
--- Generation Time: Nov 02, 2024 at 01:59 AM
+-- Host: sql2.njit.edu
+-- Generation Time: Nov 15, 2024 at 03:46 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.4.8
 
@@ -43,6 +43,7 @@ CREATE TABLE IF NOT EXISTS `TechGadgetProducts` (
 --
 
 INSERT INTO `TechGadgetProducts` (`TechProductID`, `TechProductCode`, `TechName`, `TechDescription`, `TechCategoryID`, `TechWholesalePrice`, `TechListPrice`, `DateCreated`, `Color`) VALUES
+(909, 'GDTES', 'Valid Product test', 'This is testing to see wheher or not this process works.', 505, 299.00, 399.00, '2024-11-15 15:15:39', 'Black'),
 (1467, 'CMR', 'Camera', 'fast', 400, 399.00, 499.00, '2024-10-18 15:07:21', 'Silver'),
 (1477, 'CMRA', 'Camera', 'fast', 400, 399.00, 499.00, '2024-10-18 15:05:51', 'Silver'),
 (2005, 'OCLS', 'Oculus Virtual Reality Headset', 'A standalone VR headset that doesn''t require a PC or console to run.', 100, 500.00, 650.00, '2024-10-10 09:16:10', 'Blue'),
@@ -59,7 +60,8 @@ INSERT INTO `TechGadgetProducts` (`TechProductID`, `TechProductCode`, `TechName`
 (6066, 'GRMNWTCH', 'Garmin Forerunner 965', 'Forerunner 965 is a premium running smartwatch with a touchscreen AMOLED display & buttons, built-in maps, & up to 23 days of battery life. Train for an event, achieve a milestone, or improve your fitness with Garmin.', 500, 599.99, 699.99, '2024-10-15 08:09:42', 'Carbon Gray'),
 (6068, 'WHOOP3', 'WHOOP Strap 3.0', 'The WHOOP Strap 3.0 is a fitness tracker that monitors heart rate, sleep, and recovery, providing personalized insights to improve your performance and overall health.', 500, 30.00, 40.00, '2024-10-18 11:36:33', 'Navy Blue'),
 (6069, 'WYSCLE', 'Withings Body+ Smart Scale', 'The Withings Body+ Smart Scale measures weight, body fat, water percentage, and muscle mass. It syncs with your smartphone to track your progress and integrates with various health apps.', 500, 99.95, 129.95, '2024-10-18 11:36:19', 'White'),
-(9000, 'BFP', 'Beats Fit Pro', 'The Beats Fit Pro are true wireless earbuds designed for active lifestyles, featuring an ergonomic design for a secure fit and sweat resistance. With adaptive noise cancellation and spatial audio capabilities, they deliver an immersive listening experience while ensuring comfort during workouts or daily activities.', 720, 299.00, 399.00, '2024-11-02 01:02:55', 'Black');
+(9000, 'BFP', 'Beats Fit Pro', 'The Beats Fit Pro are true wireless earbuds designed for active lifestyles, featuring an ergonomic design for a secure fit and sweat resistance. With adaptive noise cancellation and spatial audio capabilities, they deliver an immersive listening experience while ensuring comfort during workouts or daily activities.', 720, 299.00, 399.00, '2024-11-02 01:02:55', 'Black'),
+(9007, 'GDTEST', 'Valid Product test', 'This is testing to see wheher or not this process works.', 505, 299.00, 399.00, '2024-11-15 15:13:39', 'Black');
 
 --
 -- Indexes for dumped tables

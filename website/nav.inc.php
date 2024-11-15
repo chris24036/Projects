@@ -62,7 +62,7 @@
            <td>
                <form action="index.php" method="post">
                    <label>Search for Category:</label><br>
-                   <input type="text" name="categoryID" size="14" />
+                   <input type="text" name="TechCategoryID" size="14" />
                    <input type="submit" value="find" />
                    <input type="hidden" name="content" value="displaytechcitycategory">
                </form>

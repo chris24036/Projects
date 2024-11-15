@@ -28,7 +28,7 @@ if (!isset($_POST['TechProductID']) or (!is_numeric($_POST['TechProductID']))) {
                </tr>
                <tr>
                    <td>List Price</td>
-                 <td><input type="text" name="TechlistPrice" value="<?php echo $product->TechListPrice; ?>"></td>
+                 <td><input type="number" name="TechlistPrice" value="<?php echo $product->TechListPrice; ?>"></td>
                </tr>
            </table><br><br>
            <input type="submit" name="answer" value="Update Item">

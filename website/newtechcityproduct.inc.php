@@ -15,7 +15,7 @@
        </tr>
        <tr>
            <td>List Price:</td>
-           <td><input type="number" min=0 max=6 step=0.1 name="TechListPrice" size="10"></td>
+           <td><input type="number" min=0 max=10000000 step=0.01 name="TechListPrice" size="10"></td>
        </tr>
        <tr>
            <td>Color:</td>
@@ -31,7 +31,7 @@
        </tr>
        <tr>
            <td>Tech Wholesale Price:</td>
-           <td><input type="number" min=0 max=6 step=0.1 name="TechWholesalePrice" size="10"></td>
+           <td><input type="number" min=0 max=10000000 step=0.01 name="TechWholesalePrice" size="10"></td>
        </tr>
    </table><br>
    <input type="submit" value="Submit New Item">

@@ -5,7 +5,7 @@ if (!isset($_REQUEST['TechCategoryID']) or (!is_numeric($_REQUEST['TechCategoryI
    <a href="index.php?content=listcategories">List Categories</a>
 <?php
 } else {
-   $categoryID = $_REQUEST['TechCategoryID'];
+   $TechCategoryID = $_REQUEST['TechCategoryID'];
    $category = Category::findCategory($TechCategoryID);
    if ($category) {
        echo $category;

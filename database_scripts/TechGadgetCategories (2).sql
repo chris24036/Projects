@@ -2,8 +2,8 @@
 -- version 4.2.7.1
 -- http://www.phpmyadmin.net
 --
--- Host: sql1.njit.edu
--- Generation Time: Oct 19, 2024 at 12:51 AM
+-- Host: sql2.njit.edu
+-- Generation Time: Nov 15, 2024 at 03:46 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.4.8
 
@@ -42,10 +42,15 @@ INSERT INTO `TechGadgetCategories` (`TechCategoryID`, `TechCategoryCode`, `TechC
 (123, 'VR', 'Oculus', '2024-10-17 12:33:40', 90),
 (200, 'BLTH', 'Bluetooth Devices', '2024-10-10 09:02:29', 2),
 (221, 'SMRT', 'Smart Devices', '2024-10-18 12:25:48', 2),
+(223, 'TRMP', 'Bad Category Test', '2024-11-05 11:43:55', 21),
 (300, 'NOWIRE', 'Wireless Devices', '2024-10-10 09:03:23', 3),
 (321, 'VR', 'Oculus', '2024-10-18 11:43:28', 90),
 (444, 'VR', 'Oculus', '2024-10-18 11:54:36', 90),
-(500, 'SMRTFTN', 'Fitness Devices', '2024-10-10 09:04:44', 5);
+(500, 'SMRTFTN', 'Fitness Devices', '2024-10-10 09:04:44', 5),
+(505, 'GRT', 'Good Test Category', '2024-11-05 11:49:39', 15),
+(720, 'HDPH', 'Headphones', '2024-11-01 20:21:15', 21),
+(760, 'HDPH', 'Headphones', '2024-11-01 20:18:23', 23),
+(761, 'HDPH', 'Headphones', '2024-11-01 20:19:56', 23);
 
 --
 -- Indexes for dumped tables
