@@ -1,3 +1,5 @@
+
+//Christopher M Rodriguez, November 15, 2024, IT202-001, Phase 4, cmr82@njit.edu
 <h2>Enter New Item Information</h2>
 <form name="newitem" action="index.php" method="get">
    <table cellpadding="1" border="0">

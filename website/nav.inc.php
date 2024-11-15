@@ -1,3 +1,4 @@
+//Christopher M Rodriguez, November 15, 2024, IT202-001, Phase 4, cmr82@njit.edu
 <table width="100%" cellpadding="3">
    <?php
    if (!isset($_SESSION['login'])) {

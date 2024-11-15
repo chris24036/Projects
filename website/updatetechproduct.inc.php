@@ -1,4 +1,8 @@
 <?php
+//Christopher M Rodriguez, November 15, 2024, IT202-001, Phase 4, cmr82@njit.edu
+
+
+
 include_once("techcity.product.php");
 //nclude_once("changetechcityproduct.inc.php");
 if (!isset($_POST['TechProductID']) or (!is_numeric($_POST['TechProductID']))) {

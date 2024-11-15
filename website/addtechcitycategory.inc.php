@@ -1,4 +1,5 @@
 <?php
+
 // include("category.php");
 if (isset($_SESSION['login'])) {
    $TechCategoryID = filter_input(INPUT_POST, 'TechCategoryID', FILTER_VALIDATE_INT);
