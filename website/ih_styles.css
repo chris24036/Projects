@@ -2,9 +2,10 @@
 body {
     font-family: Georgia, serif; /* Georgia as main font */
     font-size: 100%;
-    color: #0A3D62; /* Dark blue for main text */
-    background-color: #EAF4F9; /* Light blue for background */
+    color: #b3b4bd; /* Light grayish text for readability */
+    background-color: #141619; /* Dark gray for background */
     margin: 0px;
+    height: 100%;
     padding: 0px;
     overflow-x: hidden;
 }
@@ -12,7 +13,7 @@ body {
 h1 {
     font-family: Georgia, serif;
     font-size: 140%;
-    color:rgb(168, 178, 182); /* Dark blue for main headings */
+    color: #0a21c0; /* Blue for main headings */
     margin: 0px;
     padding: 0px;
 }
@@ -20,7 +21,7 @@ h1 {
 h2 {
     font-family: Georgia, serif;
     font-size: 120%;
-    color: #3C8DBA; /* Mid-blue for subheadings */
+    color: #2c2e3a; /* Slightly lighter gray for subheadings */
     margin: 0px;
     padding: 0px;
 }
@@ -28,7 +29,7 @@ h2 {
 h3 {
     font-family: Georgia, serif;
     font-size: 110%;
-    color: #0A3D62; /* Dark blue */
+    color: #b3b4bd; /* Light gray for smaller headings */
     margin: 0px;
     padding: 0px;
 }
@@ -36,105 +37,114 @@ h3 {
 h4 {
     font-family: Georgia, serif;
     font-size: 100%;
-    color: #0A3D62; /* Dark blue */
+    color: #b3b4bd; /* Consistent light gray */
     margin: 0px;
     padding: 0px;
+}
+
+.wrapper {
+    min-height: 100%; /* Fills at least the height of the viewport */
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
     font-family: Georgia, serif;
     clear: both;
     text-align: center;
-    padding: 10px;
-    border-top: 1px solid #3C8DBA; /* Mid-blue border */
-    background-color: #174f62; /* Light-mid blue for footer */
-    color: #9dc7dc;
+    padding: 20px;
+    border-top: 1px solid #2c2e3a; /* Dark gray border */
+    background-color: #050a44; /* Very dark blue for footer */
+    color: #b3b4bd; /* Light gray text */
     width: 100%;
 }
 
 main {
     padding: 5px;
-    border-top: 1px solid #3C8DBA;
-    background-color: #EAF4F9; /* Light blue */
+    border-top: 1px solid #2c2e3a;
+    background-color: #2c2e3a; /* Slightly lighter gray for main content */
     float: left;
     width: 55%;
-    color: #0A3D62;
+    color: #b3b4bd; /* Light gray text */
     height: 100%;
+    flex: 1;
 }
 
 main table {
     padding: 2px;
-    background-color: #7ab7ef; /* Light-mid blue for table */
-    color: #0A3D62;
+    background-color: #141619; /* Dark gray for table */
+    color: #b3b4bd; /* Light gray text */
+    border-collapse: collapse;
 }
 
 main td {
     padding: 2px;
+    border: 1px solid #0a21c0; /* Blue for table borders */
 }
 
 header {
     padding: 10px;
-    border-bottom: 1px solid #64bbeb;
-    background-color: #0A3D62; /* Dark blue for header background */
-    color: #EAF4F9;
+    border-bottom: 1px solid #0a21c0; /* Blue border */
+    background-color: #050a44; /* Very dark blue for header */
+    color: #b3b4bd; /* Light gray text */
     height: 50px;
     width: 100%;
 }
 
 nav {
-    padding: 10px;
-    border-bottom: 1px solid #3C8DBA;
-    border-top: 1px solid #3C8DBA;
-    border-right: 1px solid #3C8DBA;
-    background-color:598392; /* Light-mid blue for navbar */
-    color: #0A3D62;
+    padding: 20px;
+    border-bottom: 3px solid #0a21c0; /* Blue for navbar borders */
+    border-top: 3px solid #0a21c0;
+    border-right: 3px solid #0a21c0;
+    background-color: #2c2e3a; /* Slightly lighter gray for navbar */
+    color: #b3b4bd; /* Light gray text */
     width: 20%;
 }
 
 a {
-    color: #3C8DBA; /* Mid-blue for links */
+    color: #0a21c0; /* Blue for links */
     text-decoration: none;
 }
 
 a:link {
-    color: #3C8DBA;
+    color: #0a21c0;
     text-decoration: none;
 }
 
 a:visited {
-    color: #0A3D62; /* Dark blue for visited links */
+    color: #b3b4bd; /* Light gray for visited links */
     text-decoration: none;
 }
 
 a:hover {
-    color: #143844; /* Light-mid blue for hover effect */
+    color: #050a44; /* Very dark blue for hover effect */
     text-decoration: underline;
 }
 
 input {
     font-family: Georgia, serif;
-    border: 1px solid #0A3D62;
-    color: #0A3D62;
-    background-color: #EAF4F9;
+    border: 1px solid #0a21c0;
+    color: #b3b4bd;
+    background-color: #2c2e3a;
 }
 
 input[type=submit] {
     font-family: Georgia, serif;
-    background-color: #3C8DBA; /* Mid-blue for submit button */
-    color: #EAF4F9; /* Light background text for contrast */
+    background-color: #0a21c0; /* Blue for submit button */
+    color: #b3b4bd; /* Light gray text for contrast */
     border: none;
     padding: 5px 10px;
     cursor: pointer;
 }
 
 input:required:invalid {
-    border: 1px solid #FF4C4C; /* Soft red for invalid input */
+    border: 1px solid #b3b4bd; /* Light gray for invalid input */
 }
 
 input:required:valid {
-    border: 1px solid #3C8DBA; /* Mid-blue for valid input */
+    border: 1px solid #0a21c0; /* Blue for valid input */
 }
 
 input:focus {
-    background-color: #A3D2E2; /* Light-mid blue focus color */
+    background-color: #141619; /* Dark gray focus color */
 }

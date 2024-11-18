@@ -1,6 +1,7 @@
-//Christopher M Rodriguez, November 15, 2024, IT202-001, Phase 4, cmr82@njit.edu
+
 <table width="100%" cellpadding="3">
    <?php
+   //Christopher M Rodriguez, November 15, 2024, IT202-001, Phase 4, cmr82@njit.edu
    if (!isset($_SESSION['login'])) {
    ?>
        <tr>
@@ -53,7 +54,7 @@
            <td>
                <form action="index.php" method="post">
                    <label>Search for Item:</label><br>
-                   <input type="text" name="TechProductID" size="14" required />
+                   <input type="text" name="TechProductID" size="14"/>
                    <input type="submit" value="find" />
                    <input type="hidden" name="content" value="updatetechproduct">
                 </form>
