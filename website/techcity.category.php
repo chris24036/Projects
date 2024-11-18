@@ -1,4 +1,5 @@
 <?php
+//Christopher M Rodriguez, November 15, 2024, IT202-001, Phase 4, cmr82@njit.edu
 require_once('database.php');
 class Category{
     public $TechCategoryID;

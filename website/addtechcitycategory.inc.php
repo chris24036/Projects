@@ -1,5 +1,5 @@
 <?php
-
+//Christopher M Rodriguez, November 15, 2024, IT202-001, Phase 4, cmr82@njit.edu
 // include("category.php");
 if (isset($_SESSION['login'])) {
    $TechCategoryID = filter_input(INPUT_POST, 'TechCategoryID', FILTER_VALIDATE_INT);
