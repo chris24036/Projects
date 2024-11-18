@@ -9,12 +9,12 @@
             font-family: Georgia, serif;
             text-align: center;
             padding: 10px;
-            border-top: 1px solid #3C8DBA;
-            background-color: #174f62; 
-            color: #9dc7dc;
+            border-top: 1px solid #0a21c0; /* Bright blue for border */
+            background-color: #141619; /* Dark background for footer */
+            color: #b3b4bd; /* Light gray for text */
             width: 100%;
             position: absolute;
-            bottom:30px;
+            bottom: 30px;
         }
     </style>
 </head>
