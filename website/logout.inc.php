@@ -4,5 +4,7 @@ if (isset($_SESSION['login'])) {
    unset($_SESSION['login']);
    session_destroy();
 }
+header("Location: index.php"); // Replace 'login.php' with the path to your login page
+exit(); // Ensure no 
 ?>
 

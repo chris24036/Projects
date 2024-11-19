@@ -22,10 +22,10 @@ if (!isset($_SESSION['login'])) {
     $pronouns = $_SESSION['pronouns'];
     echo "<h2>Hi $firstName $lastName($pronouns), Welcome to TechCity Inventory helper </h2>";
 ?>
-   <p>This program tracks category and item inventory for TechCity</p>
-   <p>Managers will have the ability to adjust/create categories and items for.</p>
-   <p>Tech City. Only authorized users have access to this application.</p>
-   <p>All gadgets that are created must follow Tech City guidlines!</p>
+   <p>This application tracks category and item inventory for TechCity.<br></p>
+   <p>Managers will have the ability to adjust/create categories and items.<br></p>
+   <p>Only authorized personnel have access to this application.<br></p>
+   <p>All gadgets that are created must follow Tech City guidlines!<br></p>
 <?php
 }
 ?>
