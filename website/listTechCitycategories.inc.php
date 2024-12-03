@@ -19,7 +19,7 @@
 </script>
 <h2>Select Category</h2>
 <form name="categories" method="post">
-   <select ondblclick="listbox_dblclick()" name="TechCategoryID" size="20">
+   <select ondblclick="listbox_dblclick()" name="TechCategoryID" size="20"style="background-color:black; color: #305CDE;">
        <?php
    //    include("category.php");
        $categories = Category::getCategories();

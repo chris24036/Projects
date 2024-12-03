@@ -1,20 +1,37 @@
-<h2>Items</h2>
-<ul>
-<?php
-include("techcity.product.php");
+<!-- Christopher M Rodriguez IT202-001 Phase 5 November 30, 2024 -->
+<script language="javascript">
+   function listbox_dblclick() {
+       document.items.updateitem.click()
+   }
+   function button_click(target) {
+       var userConfirmed = true;
+       if (target == 1) {
+           userConfirmed = confirm("Are you sure you want to remove this item?");
+       }
+       if (userConfirmed) {
+           if (target == 1) items.action = "index.php?content=removeTechCityproduct";
+           if (target == 2) items.action = "index.php?content=updatetechproduct";
+       } else {
+           alert("Action canceled.");
+       }
+   }
+</script>
+<h2>Select Item</h2>
+<form name="items" method="post">
+   <select ondblclick="listbox_dblclick()" name="TechProductID" size="20" style="background-color:black; color: #305CDE;">
+       <?php
+       include("techcity.product.php");
+       $products = Product::getProduct();
+       foreach ($products as $product) {
+           $TechProductID = $product->TechProductID;
+           $TechName = $product->TechName;
+           $option = $TechProductID . " - " . $TechName;
+           echo "<option value=\"$TechProductID\">$option</option>\n";
+       }
+       ?>
+   </select>
+   <br>
+   <input type="submit" onClick="button_click(1)" name="deletproduct" value="Delete Item">
+   <input type="submit" onClick="button_click(2)" name="updateproduct" value="Update Item">
+</form>
 
-$products = Product::getProduct(); 
-
-// Check if products were retrieved successfully
-if ($products && is_array($products)) {
-    foreach ($products as $product) {
-        $TechProductID = $product->TechProductID;
-        $name = "$TechProductID - $product->TechProductCode, $product->TechName"; // Using double quotes for cleaner syntax
-        // Output each product as a list item
-        echo "<li>$name</li>";
-    }
-} else {
-    echo "<li>No products found.</li>";
-}
-?>
-</ul>
