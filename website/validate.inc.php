@@ -20,6 +20,7 @@ if(filter_var($emailAddress, FILTER_VALIDATE_EMAIL)){
       $_SESSION['firstName'] = $firstName;
       $_SESSION['lastName'] = $lastName;
       $_SESSION['pronouns'] = "$pronouns";
+      $_SESSION['emailAddress'] = $emailAddress;
       
       header("Location: index.php");
    }else {   

@@ -1,5 +1,4 @@
 <?php
-//Christopher M Rodriguez, November 15, 2024, IT202-001, Phase 4, cmr82@njit.edu
 require_once('database.php');
 include_once("techcity.category.php");
 class Product{
@@ -22,7 +21,6 @@ class Product{
         $this->TechWholesalePrice = $TechWholesalePrice;
         $this->TechListPrice = $TechListPrice;
         $this->DateCreated = $DateCreated;
-
     }
     function __toString(){
         $output = "<h2>Category Number: $this->TechProductID</h2>\n" .
@@ -44,7 +42,6 @@ class Product{
             $this->TechWholesalePrice,
             $this->TechListPrice,
             $this->DateCreated
-
         );
         $result = $stmt->execute();
         $db->close();
@@ -77,7 +74,6 @@ class Product{
             $db->close();
             return NULL;
         }   
-
     }
     function updateProduct(){
         $db = getDB();
@@ -115,7 +111,6 @@ class Product{
                 $row['TechWholesalePrice'],
                 $row['TechListPrice'],
                 $row['DateCreated']
-
             );
             $db->close();
             return $product;
@@ -154,4 +149,15 @@ static function getTotalListPrice(){
        return NULL;
    }
 }
+static function getTotalWholesalePrice(){
+    $db = getDB();
+    $query = "SELECT sum(TechWholesalePrice) FROM TechGadgetProducts";
+    $result = $db->query($query);
+    $row = $result->fetch_array();
+    if ($row) {
+        return $row[0];
+    } else {
+        return NULL;
+    }
+ }
 }

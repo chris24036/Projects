@@ -1,6 +1,6 @@
 <?php
 // Christopher M Rodriguez IT202-001 Phase 5 December 3, 2024
-include("techcity.product.php");
+include_once("techcity.product.php");
 
 if (isset($_SESSION['login'])) {
     // Check if 'TechProductID' is present in the POST request
@@ -9,8 +9,8 @@ if (isset($_SESSION['login'])) {
 
         // Ensure the Product ID is valid before proceeding
         if (!empty($TechProductID)) {
-            $product = Product::findProduct($TechProductID);
-            $result = $product->removeProduct();
+            $products = Product::findProduct($TechProductID);
+            $result = $products->removeProduct();
 
             if ($result) {
                 echo "<h2>Item $TechProductID removed</h2>\n";

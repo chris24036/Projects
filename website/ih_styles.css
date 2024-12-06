@@ -1,7 +1,7 @@
 /*Christopher M Rodriguez, November 15, 2024, IT202-001, Phase 4, cmr82@njit.edu*/
 body {
     font-family: Georgia, serif; /* Georgia as main font */
-    font-size: 100%;
+    font-size: larger;
     color: #7a7a7e; /* Light grayish text for readability */
     background-color: #08090a; /* Dark gray for background */
     margin: 0px;
@@ -13,7 +13,7 @@ body {
 h1 {
     font-family: Georgia, serif;
     font-size: 140%;
-    color: #2121f3; /* Blue for main headings */
+    color: #0707ed; /* Blue for main headings */
     margin: 0px;
     padding: 0px;
 }
@@ -52,20 +52,21 @@ footer {
     font-family: Georgia, serif;
     clear: both;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     border-top: 1px solid #2c2e3a; /* Dark gray border */
-    background-color: #050a44; /* Very dark blue for footer */
+    background-color: #0512a2; /* Very dark blue for footer */
     color: #b3b4bd; /* Light gray text */
     width: 100%;
+    height:95px;
 }
 
 main {
     padding: 5px;
     border-top: 1px solid #2c2e3a;
-    background-color: #2c2e3a; /* Slightly lighter gray for main content */
+    background-color:#191970; /* Slightly lighter gray for main content */
     float: left;
     width: 55%;
-    color: #8f8f91; /* Light gray text */
+    color: lightgrey; /* Light gray text */
     height: 100%;
     flex: 1;
 }
@@ -85,20 +86,26 @@ main td {
 header {
     padding: 10px;
     border-bottom: 1px solid #0a21c0; /* Blue border */
-    background-color: #050a44; /* Very dark blue for header */
+    background-color: #000000; /* Very dark blue for header */
     color: #b3b4bd; /* Light gray text */
-    height: 50px;
+    height: 55px;
     width: 100%;
+    font-size:larger;
 }
-
+.logo {
+    width: 100px;
+    height: auto; /* Maintain aspect ratio */
+}
 nav {
-    padding: 20px;
-    border-bottom: 3px solid #0a21c0; /* Blue for navbar borders */
+    padding: 25px;
+    height:100px;
+     /* Blue for navbar borders */
     border-top: 3px solid #0a21c0;
     border-right: 3px solid #0a21c0;
-    background-color: #2c2e3a; /* Slightly lighter gray for navbar */
+    background-color: #000000; /* Slightly lighter gray for navbar */
     color: #b3b4bd; /* Light gray text */
     width: 20%;
+    
 }
 
 a {
@@ -117,7 +124,7 @@ a:visited {
 }
 
 a:hover {
-    color: #050a44; /* Very dark blue for hover effect */
+    color: #0818c0; /* Very dark blue for hover effect */
     text-decoration: underline;
 }
 

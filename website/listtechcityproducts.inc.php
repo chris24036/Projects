@@ -16,11 +16,11 @@
        }
    }
 </script>
-<h2>Select Item</h2>
+<h2 style = color:gray>Select Item</h2>
 <form name="items" method="post">
    <select ondblclick="listbox_dblclick()" name="TechProductID" size="20" style="background-color:black; color: #305CDE;">
        <?php
-       include("techcity.product.php");
+       //include("techcity.product.php");
        $products = Product::getProduct();
        foreach ($products as $product) {
            $TechProductID = $product->TechProductID;

@@ -29,11 +29,11 @@ if ($category) {
        <label for="categoryCode">Category Code:</label>
        <input type="text" name="TechCategoryCode" id="TechCategoryCode" value="<?php echo $category->TechCategoryCode; ?>">
        <label for="categoryName">Category Name:</label>
-       <input type="text" name="categoryName" id="categoryName" value="<?php echo $category->TechCategoryName; ?>">
+       <input type="text" name="TechcategoryName" id="categoryName" value="<?php echo $category->TechCategoryName; ?>">
        <input type="submit" name="answer" value="Update Category">
        <input type="submit" name="answer" value="Cancel">
-       <input type="hidden" name="categoryID" value="<?php echo $TechCategoryID; ?>">
-       <input type="hidden" name="content" value="changecategory">
+       <input type="hidden" name="TechCategoryID" value="<?php echo $TechCategoryID; ?>">
+       <input type="hidden" name="content" value="changeTechCitycategory">
    </form>
    <?php
 } else {

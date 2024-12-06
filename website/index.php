@@ -2,6 +2,7 @@
 //--Christopher M. Rodriguez, IT202-001, Phase1 Assignment, cmr82@njit.edu
 session_start();
 include("techcity.category.php");
+include("techcity.product.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,6 +50,7 @@ include("techcity.category.php");
        var domcategories = document.getElementById("categorycount");
        var domitems = document.getElementById("itemcount");
        var domlistpricetotal = document.getElementById("listpricetotal");
+       var domwholesaleprice = document.getElementById("wholesaleprice");
        //send the GET request to retrieve the data
        var request = new XMLHttpRequest();
        request.open("GET", "realtime.php", true);
@@ -62,9 +64,12 @@ include("techcity.category.php");
                var items = xmlitems.childNodes[0].nodeValue;
                var xmllistpricetotal = xmldoc.getElementsByTagName("listpricetotal")[0];
                var listpricetotal = xmllistpricetotal.childNodes[0].nodeValue;
+               var xmlwholesaleprice = xmldoc.getElementsByTagName("wholesaleprice")[0];
+               var wholesaleprice = xmlwholesaleprice.childNodes[0].nodeValue;
                domcategories.innerHTML = categories;
                domitems.innerHTML = items;
                domlistpricetotal.innerHTML = listpricetotal;
+               domwholesaleprice.innerHTML = wholesaleprice;
            }
        };
        request.send();
@@ -72,8 +77,8 @@ include("techcity.category.php");
 </script>
 <aside>
            <?php include("aside.inc.php"); ?>
-           <script language="javascript" type="text/javascript" )>
+           <script language="javascript" type="text/javascript" >
                getRealTime();
                setInterval(getRealTime, 5000);
            </script>
-</aside>
+        </aside>

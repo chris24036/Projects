@@ -44,3 +44,5 @@ VALUES
 (500,"SMRTFTN", "Fitness Devices",005, NOW());
 
 SELECT * FROM `TechGadgetCategories`
+
+SELECT count(TechCategoryID) FROM TechGadgetCategories

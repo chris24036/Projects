@@ -1,5 +1,5 @@
 <?php
-include("techcity.product.php");
+include_once("techcity.product.php");
 
 // Validate TechProductID
 if (!isset($_POST['TechProductID']) || !is_numeric($_POST['TechProductID'])) {

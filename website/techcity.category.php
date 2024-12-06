@@ -1,6 +1,4 @@
 <?php
-//Christopher M Rodriguez, November 15, 2024, IT202-001, Phase 4, cmr82@njit.edu
-require_once('database.php');
 class Category{
     public $TechCategoryID;
     public $TechCategoryCode;
@@ -28,7 +26,6 @@ class Category{
             $this->TechCategoryCode,
             $this->TechCategoryName,
             $this->ShelfNumber
-            
         );
         $result = $stmt->execute();
         $db->close();
@@ -57,7 +54,6 @@ class Category{
             $db->close();
             return NULL;
         }   
-
     }
     function updateCategory(){
         $db = getDB();
@@ -111,6 +107,5 @@ class Category{
             return NULL;
         }
     }
-
 }
 ?>

@@ -18,13 +18,6 @@
         }
     </style>
 </head>
-<body>
-    <div class="wrapper">
-        <main>
-            <h1>Welcome to Inventory Helper</h1>
-            <p>Manage your inventory with ease and efficiency.</p>
-        </main>
-    </div>
     <footer>
         <p>&copy; Inventory Helper - Making Inventory Management Easier</p>
         <p>Christopher Rodriguez, IT202-001, cmr82@njit.edu</p>
@@ -35,5 +28,4 @@
             ?>
         </p>
     </footer>
-</body>
 </html>

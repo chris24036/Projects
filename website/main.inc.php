@@ -20,7 +20,9 @@ if (!isset($_SESSION['login'])) {
     $firstName = $_SESSION['firstName'];
     $lastName = $_SESSION['lastName'];
     $pronouns = $_SESSION['pronouns'];
-    echo "<h2>Hi $firstName $lastName($pronouns), Welcome to TechCity Inventory helper </h2>";
+    $emailAddress = $_SESSION['emailAddress'];
+    
+    echo "<h2>Hi $firstName $lastName($pronouns) $emailAddress, Welcome to TechCity Inventory helper </h2>";
 ?>
    <p>This application tracks category and item inventory for TechCity.<br></p>
    <p>Managers will have the ability to adjust/create categories and items.<br></p>
