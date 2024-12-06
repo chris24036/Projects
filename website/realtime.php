@@ -1,5 +1,6 @@
 <?php
-ob_start(); // Start output buffering to prevent early output
+//<!--Christopher M Rodriguez IT202-001 Phase 5 December 5, 2024-->
+ob_start(); 
 header("Content-type: application/xml");
 include("techcity.category.php");
 include("techcity.product.php");
