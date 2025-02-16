@@ -1,1 +1,2 @@
-This repisotry is dedicated to displaying the code that make up my website project for IT202 with professor Vohra. 
+This repisotry is dedicated to displaying my projects that showcase 
+my skills in java, web development, and more.
